@@ -1,7 +1,7 @@
 /* One component needed for our project is the form for the user to enter the foods they have eaten. 
 For this component, we will need a form. Elements of the form include the following:
 
-- Search field for looking up items in database
+- Search form for looking up items in database
 - Field for manual entry of food
 	a.) field for food name
 	b.) field for carb count
@@ -12,7 +12,29 @@ For this component, we will need a form. Elements of the form include the follow
 
 
 
+/*Kingsley Nyaosi
+This portion of the code creates the search form 
+It is univeral and can be used on any page that we wish to include a search form
+Its only role is to create the search form and therefore follows the single principle responsibility */
 
+/*
+<html> 
+    <head> 
+	    <meta  http-equiv="Content-Type" content="text/html;  charset=iso-8859-1"> 
+	    <title>Search  Food</title> 
+    </head> 
+	  <p>
+    <body> 
+	    <h3>Search for common foods</h3> 
+	    <p>You  may search by Food type</p> 
+	    <form  method="post" action="search.php?go"  id="searchform"> 
+	      <input  type="text" name="name"> 
+	      <input  type="submit" name="submit" value="Search"> 
+	    </form> 
+    </body> 
+</html> 
+
+*/
 
 
 /* Tiffany Connors
