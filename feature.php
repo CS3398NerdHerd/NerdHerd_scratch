@@ -1,4 +1,4 @@
-One component needed for our project is the form for the user to enter the foods they have eaten. 
+/* One component needed for our project is the form for the user to enter the foods they have eaten. 
 For this component, we will need a form. Elements of the form include the following:
 
 - Search field for looking up items in database
@@ -8,15 +8,16 @@ For this component, we will need a form. Elements of the form include the follow
 - Field for input of the serving size
 - submission button
 - save to database
+*/
 
 
 
 
 
 
-//Tiffany Connors
-//This portion of code saves the form data to the database.
-//This follows the single principle responsibility because it has only one reason to change. The only reason for changes to be made to this section is if additional user input fields are added.
+/* Tiffany Connors
+This portion of code saves the form data to the database.
+This follows the single principle responsibility because it has only one reason to change. The only reason for changes to be made to this section is if additional user input fields are added. */
 
 <?php
 $connection = mysql_connect("localhost", "root", ""); // Establishing Connection with Server 
