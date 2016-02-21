@@ -61,3 +61,21 @@ echo "<p>Insertion Failed <br/> Some Fields are Blank....!!</p>";
 }
 mysql_close($connection); // Closing Connection with Server
 ?>
+
+
+/* Azaan Dhalla
+ * This portion of the code links our database to the web app
+ * This follows the single responsibilty rule because it serve no other purpose other then to connect to the database and it doesn't rely on other code to execute properlly.*/
+<?php
+   Makes initial conection to database
+   define ('DB_USER', 'username');
+   define ('DB_PASSWORD', '********');
+   define ('DB_HOST', 'mysql15.myserver.com');
+   define ('DB_NAME', 'cmsubsdata');
+  
+   $connect = @mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)
+     	or die('Our database is currently down for updates, please check back later.'); 
+
+   	$db = @mysql_select_db(DB_NAME, $connect)
+   		or die('Our database is currently down for updates, please check back later.');
+  ?>
